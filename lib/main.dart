@@ -13,10 +13,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
           primaryColor: Colors.white,
+          primaryIconTheme: IconThemeData(color: Colors.teal),
           textTheme: TextTheme(
+            subtitle2: TextStyle(
+                fontFamily: "monospace",
+                color: Colors.deepPurple,
+                fontSize: 22),
             headline1: TextStyle(fontFamily: "monospace", color: Colors.white),
+            // headline2: TextStyle(fontFamily: "monospace"),
             headline4: TextStyle(fontFamily: "monospace", color: Colors.white),
-            headline5: TextStyle(fontFamily: "monospace", color: Colors.white),
+            headline5: TextStyle(fontFamily: "monospace", color: Colors.purple),
           )),
       routes: {
         "/": (context) => Home(),
